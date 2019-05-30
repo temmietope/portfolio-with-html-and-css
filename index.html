@@ -11,6 +11,7 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Artifika"
       rel="stylesheet"
@@ -22,7 +23,7 @@
       <div class="welcome">
         <div class="my-intro">
           <h2>Hi, I am <span>Temitope Ayodele</span></h2>
-          <h2>I am a Frontend Developer</h2>
+          <h2 id="typed" ></h2>
           <a href="#about-me">
             <button class="first-btn" id="first-btn">Know More About Me</button>
           </a>
@@ -33,16 +34,16 @@
             <li><a href="#about-me">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#blog">BLOG</a></li>
-            <li><a href="contact">CONTACT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
       <!-- end of welcome div -->
       <div class="the-rest">
-        <div class="about-me" id="about-me">
+        <div class="about-me" id="about-me" data-aos="flip-left">
           <h1>ABOUT</h1>
           <hr />
-          <div class="pros">
+          <div class="pros" data-aos="fade-up">
             <div class="first-column">
               <i class="fas fa-space-shuttle"></i>
               <h4>Fast</h4>
@@ -64,8 +65,8 @@
               <p>I believe a site should be full of life</p>
             </div>
           </div>
-          <div class="brief-intro">
-            <div class="my-image">
+          <div class="brief-intro" data-aos="zoom-in-down">
+            <div class="my-image" data-aos="fade-left" data-aos-duration="3000">
               <img src="./image/20171028_163740.jpg" alt="" />
               <h4>Temitope Ayodele</h4>
               <p>
@@ -77,7 +78,7 @@
               <div class="html">
                 <span>HTML </span>
                 <div class="range-space" id="range-space">
-                  <div class="flexible" id="flexible"></div>
+                  <div class="flexible" id="flexible"  data-aos="fade-right" data-aos-duration="2000"></div>
                   <div></div>
                   <span>100%</span>
                 </div>
@@ -85,28 +86,28 @@
               <div class="css">
                 <span>CSS </span>
                 <div class="range-space" id="range-space">
-                  <div class="flexible" id="flexible"></div>
+                  <div class="flexible" id="flexible"  data-aos="fade-right" data-aos-duration="2000"></div>
                   <span>90%</span>
                 </div>
               </div>
               <div class="vanilla">
                 <span>Vanilla JS </span>
                 <div class="range-space" id="range-space">
-                  <div class="flexible" id="flexible"></div>
+                  <div class="flexible" id="flexible"  data-aos="fade-right" data-aos-duration="2000"></div>
                   <span>90%</span>
                 </div>
               </div>
               <div class="react">
                 <span>React JS </span>
                 <div class="range-space" id="range-space">
-                  <div class="flexible" id="flexible"></div>
+                  <div class="flexible" id="flexible"  data-aos="fade-right" data-aos-duration="2000"></div>
                   <span>85%</span>
                 </div>
               </div>
               <div class="python">
                 <span>Python </span>
                 <div class="range-space" id="range-space">
-                  <div class="flexible" id="flexible"></div>
+                  <div class="flexible" id="flexible"  data-aos="fade-right" data-aos-duration="2000"></div>
                   <span>60%</span>
                 </div>
               </div>
@@ -114,7 +115,9 @@
           </div>
         </div>
         <!--end of about div-->
-        <div class="projects">
+        <div class="projects" id="projects" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <h1>PROJECTS</h1>
           <hr />
           <div class="gallery">
@@ -218,11 +221,15 @@
           </div>
         </div>
         <!--end of projects div-->
-        <div class="blog">
+        <div class="blog" id="blog" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
           <h1>BLOG</h1>
           <hr />
           <div class="tweets">
-            <div class="tweet">
+            <div class="tweet" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+              <div class="one">
               <blockquote
                 class="twitter-tweet"
                 data-cards="hidden"
@@ -261,7 +268,11 @@
                 charset="utf-8"
               ></script>
             </div>
-            <div class="tweet">
+            </div>
+            <div class="tweet" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+              <div class="one">
               <blockquote class="twitter-tweet" data-lang="en">
                 <p lang="en" dir="ltr">
                   Control ZZZZZZZZZZZZ<br />😫😫<br />Spent the whole time
@@ -298,7 +309,11 @@
                 charset="utf-8"
               ></script>
             </div>
-            <div class="tweet">
+            </div>
+            <div class="tweet" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+              <div class="one">
               <blockquote
                 class="twitter-tweet"
                 data-conversation="none"
@@ -355,7 +370,11 @@
                 charset="utf-8"
               ></script>
             </div>
-            <div class="tweet">
+            </div>
+            <div class="tweet" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+              <div class="one">
               <blockquote
                 class="twitter-tweet"
                 data-conversation="none"
@@ -419,17 +438,18 @@
                 charset="utf-8"
               ></script>
             </div>
+            </div>
           </div>
         </div>
         <!--end of blog div-->
-        <div class="contact">
+        <div class="contact" id="contact" data-aos="zoom-in-up">
           <h1>CONTACT ME</h1>
           <hr />
           <div class="how-to-contact">
               
-            <div class="contact-icons">
+            <div class="contact-icons" data-aos="zoom-out-down">
                 <div class="g-mail">
-                    <a href="mailto:temmieayodele@gmail.com" target="_blank"
+                    <a href="mailto:temmieayodele@gmail.com"
                       ><i class="fab fa-google"></i
                     ></a>
                   </div>
@@ -476,18 +496,26 @@
       <!--end of the-rest div-->
     </div>
     <!--end of wrapper div-->
+
+    
+     
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          // stringsElement: '#typed-strings'
+          strings:[`I am a Frontend Developer`,
+         `I love food`, `I build cool websites`, `I love R n B`,],
+          typeSpeed:100,
+          loop: true,
+        });
+        
+      </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
   </body>
 </html>
 
-<!-- <a
-href="https://twitter.com/messages/compose?recipient_id=959776758034771969&ref_src=twsrc%5Etfw"
-class="twitter-dm-button"
-data-screen-name="https://twitter.com/temmmie_"
-data-show-count="false"
-target="_blank"
->Message @https://twitter.com/temmmie_</a
-><script
-async
-src="https://platform.twitter.com/widgets.js"
-charset="utf-8"
-></script> -->
