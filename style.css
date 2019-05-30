@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Artifika";
 }
@@ -73,7 +76,7 @@ hr {
 .the-rest {
   width: 90%;
 }
-.about-me .pros {
+/* .about-me .pros {
   margin-top: 3em;
   margin-bottom: 3em;
   display: grid;
@@ -100,10 +103,11 @@ hr {
 .about-me .pros .first-column h4 {
   margin-top: 1em;
   margin-bottom: 0;
-}
+} */
 .about-me .brief-intro {
   display: grid;
   grid-template-columns: 30% 70%;
+  margin-top: 4em;
 }
 .about-me .brief-intro .my-image {
   display: flex;
@@ -120,13 +124,13 @@ hr {
   margin-top: 0;
 }
 
-.about-me .brief-intro .stack{
-    display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+.about-me .brief-intro .stack {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .range-space {
   height: 20px;
@@ -138,44 +142,44 @@ hr {
 .flexible {
   height: 20px;
   width: 90%;
-  background-color: rgba(137, 43, 226, 0.363);;
+  background-color: rgba(137, 43, 226, 0.363);
 }
 .range-space span {
   float: right;
 }
-.html .flexible{
-    width: 100%;
+.html .flexible {
+  width: 100%;
 }
-.css .flexible{
-    width: 90%;
+.css .flexible {
+  width: 90%;
 }
-.vanilla .flexible{
-    width: 90%;
+.vanilla .flexible {
+  width: 90%;
 }
-.react .flexible{
-    width: 85%;
+.react .flexible {
+  width: 85%;
 }
-.python .flexible{
-    width: 60%;
+.python .flexible {
+  width: 60%;
 }
 
-.projects{
+.projects {
   height: auto;
 }
-.projects .gallery{
+.projects .gallery {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 50% 50%;
 }
-.projects .gallery img{
+.projects .gallery img {
   min-height: 100%;
   width: 100%;
   opacity: 1;
   display: block;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
-.projects .gallery .image-container{
+.projects .gallery .image-container {
   position: relative;
   display: flex;
   flex-flow: center;
@@ -184,10 +188,9 @@ hr {
   background-color: rgba(137, 43, 226, 0.363);
   border-bottom-right-radius: 30%;
   border-top-left-radius: 30%;
- 
 }
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -204,15 +207,15 @@ hr {
   opacity: 1;
 }
 
-.text h3{
+.text h3 {
   color: white;
   font-size: 1.5em;
-} 
-.text span{
+}
+.text span {
   color: red;
   font-size: 0.8em;
 }
-.text button{
+.text button {
   background-color: inherit;
   border: 1px solid purple;
   padding: 10px 20px;
@@ -220,47 +223,48 @@ hr {
   font-size: 1em;
   font-family: "Artifika";
 }
-.text a{
+.text a {
   text-decoration: none;
-  color: white
+  color: white;
 }
-.text button:hover{
+.text button:hover {
   background-color: purple;
   color: white;
 }
 
-.blog .tweets{
+.blog .tweets {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
-.blog .tweet{
+.blog .tweet {
   padding: 10px;
 }
-.contact{
-  background-color: rgba(128, 128, 128, 0.253);
+.contact {
+  background-color: gray;
   margin-top: 50px;
+  /* margin-bottom: 100px; */
   height: 40vh;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
 }
-.contact h1{
+.contact h1 {
   padding-top: 30px;
 }
-.contact .how-to-contact{
+.contact .how-to-contact {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-.contact .contact-icons{
+.contact .contact-icons {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
-.contact .contact-icons i{
+.contact .contact-icons i {
   padding: 12px;
   background-color: purple;
   margin: 20px;
   font-size: 1.5em;
   border-bottom-left-radius: 30%;
-  color: white
+  color: white;
 }
