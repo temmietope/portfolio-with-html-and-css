@@ -18,7 +18,8 @@ body {
   grid-template-rows: 90vh 10vh;
 }
 .welcome .my-intro {
-  background-image: url(./image/architect-architecture-black-and-white-911758.jpg);
+ background-color: darkmagenta;
+  /* background-image: url(./image/architect-architecture-black-and-white-911758.jpg); */
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -43,6 +44,9 @@ body {
 .welcome .nav-bar {
   background-color: gray;
   margin-top: 0;
+}
+.welcome .show-nav{
+  display: none;
 }
 .welcome .nav-bar ul {
   display: flex;
@@ -267,4 +271,56 @@ hr {
   font-size: 1.5em;
   border-bottom-left-radius: 30%;
   color: white;
+}
+
+
+@media screen and (max-width: 768px){
+  .wrapper{
+    width: 100vw;
+  }
+  .welcome{
+    width: 100vw;
+    margin-bottom: 5em;
+  }
+  .welcome h2{
+    font-size: 1em;
+  }
+  .welcome .first-btn {
+    padding: 8px 16px;
+    margin-top: 5px;
+    font-size: 0.8em;
+  }
+  .welcome .my-intro{
+    height: 100vh;
+  }
+  .welcome .nav-bar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome .show-nav{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid darkmagenta;
+    color: white;
+    padding: 10px;
+  }
+  
+  .list{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5em;
+  }
+  .list ul{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 0.8em; */
+  }
 }
