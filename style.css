@@ -108,33 +108,40 @@ hr {
   margin-top: 1em;
   margin-bottom: 0;
 } */
+.about-me .content-of-div{
+  max-height: 70vh;
+  margin-bottom: auto;
+}
 .about-me .brief-intro {
   display: grid;
   grid-template-columns: 30% 70%;
+  /* grid-template-rows: 100%; */
   margin-top: 4em;
+ 
 }
 .about-me .brief-intro .my-image {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  text-align: center;
+  margin-top: 0;
 }
 .about-me .brief-intro .my-image img {
   min-height: 100%;
-  width: 90%;
-}
-.about-me .brief-intro .my-image p {
-  text-align: center;
-  margin-top: 0;
+  width: 100%;
 }
 
 .about-me .brief-intro .stack {
   display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
   margin-left: 20px;
   margin-right: 20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+.about-me .brief-intro .stack h4{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0;
 }
 .range-space {
   height: 20px;
@@ -273,14 +280,19 @@ hr {
   color: white;
 }
 
+@media screen and (width: 768px){
+  .wrapper{
+    max-width: 60vw;
+  }
+}
 
 @media screen and (max-width: 768px){
   .wrapper{
-    width: 100vw;
+    width: 100%;
+    margin: auto;
   }
-  .welcome{
-    width: 100vw;
-    margin-bottom: 5em;
+  .about-me .brief-intro .my-image .myname {
+    margin-top: auto;
   }
   .welcome h2{
     font-size: 1em;
@@ -293,12 +305,6 @@ hr {
   .welcome .my-intro{
     height: 100vh;
   }
-  .welcome .nav-bar{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
   .welcome .show-nav{
     display: block;
     display: flex;
@@ -309,18 +315,56 @@ hr {
     color: white;
     padding: 10px;
   }
-  
   .list{
     display: none;
     align-items: center;
     justify-content: center;
     font-size: 0.5em;
   }
-  .list ul{
+  .nav-bar{
+    height: 16vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .welcome .nav-bar ul{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me .content-of-div{
+    max-height: 70vh;
+    margin-bottom: auto;
+  }
+  .about-me .brief-intro {
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    /* font-size: 0.8em; */
+  }
+  .about-me .brief-intro .stack h4{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  .projects .gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+  }
+  .text h3 {
+    color: white;
+    font-size: 0.8em;
+  }
+  .text span {
+    color: red;
+    font-size: 0.5em;
+  }
+  .text button {
+    padding: 6px 12px;
+    margin-top: 5px;
+    font-size: 0.5em;
+    font-family: "Artifika";
   }
 }
