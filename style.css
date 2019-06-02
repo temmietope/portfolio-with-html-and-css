@@ -49,10 +49,13 @@ body {
 .welcome .nav-bar {
   background-color: gray;
   margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcome .nav-bar ul {
   display: flex;
-  justify-content: flex-start;
+  padding: 0px;
   align-items: center;
 }
 .welcome .nav-bar li {
@@ -279,6 +282,7 @@ hr {
     padding-left: 6px;
     font-size: 0.8em;
     text-align: center;
+    margin-left: 0;
   }
   .about-me .content-of-div {
     max-height: 70vh;
