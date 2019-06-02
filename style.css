@@ -18,8 +18,7 @@ body {
   grid-template-rows: 90vh 10vh;
 }
 .welcome .my-intro {
- background-color: darkmagenta;
-  /* background-image: url(./image/architect-architecture-black-and-white-911758.jpg); */
+  background-color: darkmagenta;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -40,13 +39,16 @@ body {
   margin-top: 10px;
   font-size: 1em;
   font-family: "Artifika";
+  border: 1px solid white;
 }
+.welcome .first-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .welcome .nav-bar {
   background-color: gray;
   margin-top: 0;
-}
-.welcome .show-nav{
-  display: none;
 }
 .welcome .nav-bar ul {
   display: flex;
@@ -80,44 +82,15 @@ hr {
 .the-rest {
   width: 90%;
 }
-/* .about-me .pros {
-  margin-top: 3em;
-  margin-bottom: 3em;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-.about-me .pros .first-column {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.about-me .pros .first-column i {
-  font-size: 3em;
-  padding: 1em;
-  background-color: rgba(137, 43, 226, 0.363);
-  border-bottom-right-radius: 30%;
-  border-top-left-radius: 30%;
-}
 
-.about-me .pros .first-column p {
-  text-align: center;
-  margin-top: 0;
-}
-.about-me .pros .first-column h4 {
-  margin-top: 1em;
-  margin-bottom: 0;
-} */
-.about-me .content-of-div{
+.about-me .content-of-div {
   max-height: 70vh;
   margin-bottom: auto;
 }
 .about-me .brief-intro {
   display: grid;
   grid-template-columns: 30% 70%;
-  /* grid-template-rows: 100%; */
   margin-top: 4em;
- 
 }
 .about-me .brief-intro .my-image {
   display: grid;
@@ -129,7 +102,9 @@ hr {
   min-height: 100%;
   width: 100%;
 }
-
+.about-me .brief-intro .my-image .myname {
+  margin-top: 1em;
+}
 .about-me .brief-intro .stack {
   display: grid;
   grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
@@ -138,7 +113,7 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
 }
-.about-me .brief-intro .stack h4{
+.about-me .brief-intro .stack h4 {
   text-align: center;
   font-size: 1.5em;
   margin-top: 0;
@@ -181,6 +156,8 @@ hr {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 50% 50%;
+  width: 80%;
+  margin: auto;
 }
 .projects .gallery img {
   min-height: 100%;
@@ -243,17 +220,9 @@ hr {
   color: white;
 }
 
-.blog .tweets {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-.blog .tweet {
-  padding: 10px;
-}
 .contact {
   background-color: gray;
   margin-top: 50px;
-  /* margin-bottom: 100px; */
   height: 40vh;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
@@ -280,21 +249,21 @@ hr {
   color: white;
 }
 
-@media screen and (width: 768px){
-  .wrapper{
+@media screen and (width: 768px) {
+  .wrapper {
     max-width: 60vw;
   }
 }
 
-@media screen and (max-width: 768px){
-  .wrapper{
+@media screen and (max-width: 768px) {
+  .wrapper {
     width: 100%;
     margin: auto;
   }
   .about-me .brief-intro .my-image .myname {
     margin-top: auto;
   }
-  .welcome h2{
+  .welcome h2 {
     font-size: 1em;
   }
   .welcome .first-btn {
@@ -302,40 +271,16 @@ hr {
     margin-top: 5px;
     font-size: 0.8em;
   }
-  .welcome .my-intro{
+  .welcome .my-intro {
     height: 100vh;
   }
-  .welcome .show-nav{
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: inherit;
-    border: 1px solid darkmagenta;
-    color: white;
-    padding: 10px;
-  }
-  .list{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.5em;
-  }
-  .nav-bar{
-    height: 16vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .welcome .nav-bar ul{
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
+  .welcome .nav-bar li {
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 0.8em;
     text-align: center;
-    justify-content: center;
-    align-items: center;
   }
-
-  .about-me .content-of-div{
+  .about-me .content-of-div {
     max-height: 70vh;
     margin-bottom: auto;
   }
@@ -343,7 +288,7 @@ hr {
     display: flex;
     flex-flow: column;
   }
-  .about-me .brief-intro .stack h4{
+  .about-me .brief-intro .stack h4 {
     text-align: center;
     font-size: 1.5em;
     margin-top: 20px;
@@ -366,5 +311,17 @@ hr {
     margin-top: 5px;
     font-size: 0.5em;
     font-family: "Artifika";
+  }
+
+  .contact {
+    height: 30vh;
+  }
+  .contact .contact-icons i {
+    padding: 7px;
+    background-color: purple;
+    margin: 5px;
+    font-size: 0.8em;
+    border-bottom-left-radius: 10%;
+    color: white;
   }
 }
