@@ -18,7 +18,7 @@ body {
   grid-template-rows: 90vh 10vh;
 }
 .welcome .my-intro {
-  background-color: darkmagenta;
+  background-image: url(./image/artificial-intelligence-blur-close-up-546819.jpg);
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -29,6 +29,7 @@ body {
   font: bolder;
   padding: 0;
   margin: 0;
+  color: white;
 }
 .welcome span {
   color: red;
@@ -179,6 +180,7 @@ hr {
   background-color: rgba(137, 43, 226, 0.363);
   border-bottom-right-radius: 30%;
   border-top-left-radius: 30%;
+  margin-bottom: 40px;
 }
 .middle {
   transition: 0.5s ease;
